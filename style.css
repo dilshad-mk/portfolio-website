@@ -1,0 +1,578 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+.hero-section {
+    background: url("assets/download.jpeg");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.26);
+
+
+}
+
+.nav-s {
+    backdrop-filter: blur(6px);
+    /* position: sticky;
+    top: 0; */
+    /* background-color: #0000000e; */
+    /* background-color: palevioletred; */
+    /* width: 100vw; */
+}
+
+ul {
+    margin-left: 150px;
+    /* color: white; */
+
+}
+
+.links {
+    font-family: "Instrument Serif", serif;
+    /* gap: 30px; */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) ease;
+
+    &:hover {
+        /* transition: .14s; */
+        transition: .14s ease;
+        scale: 1.1;
+        transform: translateY(-3px);
+        font-weight: bolder;
+    }
+}
+
+.brand-name {
+    font-family: "Satisfy", cursive;
+    filter: drop-shadow(1px 1px rgb(253, 253, 253));
+}
+
+/* hero section */
+.hero {
+
+    backdrop-filter: blur(10px);
+    /* border: 1px solid black; */
+    /* overflow: hidden; */
+    margin-top: 20Vh;
+    box-shadow: 1px 1px 10px rgb(151, 151, 151);
+    /* background-color: aliceblue; */
+    padding: 7em 0px;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-size: 70px;
+    /* z-index: 1; */
+}
+
+.head_1 {
+    color: white;
+}
+
+.animation-hero {
+    background: linear-gradient(#ad748b, #617eb0, #b786bd);
+    height: 70%;
+    width: 70%;
+    filter: blur(50px);
+    top: 25%;
+    border: 2px solid wheat;
+    /* left: 50%;?? */
+    opacity: 1;
+    z-index: -1;
+    animation: heroanimation1 3s ease-in-out infinite;
+
+}
+
+@keyframes heroanimation1 {
+    0% {
+        /* transform: translateX(100%); */
+        /* opacity: .3; */
+        /* scale: .5; */
+    }
+
+    25% {
+        /* transform: translateY(-30px); */
+        /* opacity: 0; */
+        scale: 1.2;
+        width: 10px;
+    }
+
+    50% {
+        transform: translateY(-60px);
+        /* opacity: 0; */
+        /* scale: 1.2; */
+    }
+
+}
+
+.self-indroduction {
+    font-family: "Instrument Serif", serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.404);
+}
+
+/* about section */
+.about-section {
+    padding-top: 100px;
+    /* position: static; */
+    /* top: 0; */
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    /* z-index: 1; */
+    overflow: hidden;
+}
+
+.about-right {
+    background: url("assets/me1.jpg");
+    width: 290px;
+    height: 400px;
+    /* object-fit: cover; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-right-social-overlay {
+    /* background: url("assets/hero-banner.gif"); */
+    background-size: contain;
+    background-color: palegoldenrod;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    z-index: -1;
+    display: flex;
+    align-items: end;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about-right-social-overlay i {
+    margin-bottom: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .14s;
+
+}
+
+.fa-instagram {
+    &:hover {
+        background: linear-gradient(#D300C5, #D300C5, #FF0069, #FF7A00, #FFD600);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .14s;
+        transform: translateY(-3px);
+        scale: 1.1;
+        filter: drop-shadow(0px 10px 4px rgba(91, 90, 90, 0.464));
+
+    }
+}
+
+.fa-whatsapp {
+    color: white;
+
+    &:hover {
+        /* background-color: ( #2c9711 );  */
+        /* -webkit-background-clip: text; */
+        /* -webkit-text-fill-color: #2c9711; */
+        color: #2c9711;
+        transition: .14s;
+        transform: translateY(-3px);
+        scale: 1.1;
+        filter: drop-shadow(0px 10px 4px rgba(91, 90, 90, 0.464));
+
+    }
+}
+
+.fa-x-twitter {
+    color: white;
+
+    &:hover {
+        color: black;
+        transition: .14s;
+        transform: translateY(-3px);
+        scale: 1.1;
+        filter: drop-shadow(0px 10px 4px rgba(91, 90, 90, 0.464));
+
+    }
+}
+
+.fa-linkedin {
+    color: white;
+
+    &:hover {
+        color: #0077B5;
+        transition: .14s;
+        transform: translateY(-3px);
+        scale: 1.1;
+        filter: drop-shadow(0px 10px 4px rgba(91, 90, 90, 0.464));
+
+    }
+}
+
+.about-left {
+    color: white;
+    /* background-color: #fff; */
+}
+
+.about-left h1 {
+    font-family: "BBH Sans Hegarty", sans-serif;
+    letter-spacing: 2px;
+}
+
+.about-left p {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.resume-download {
+    padding: 10px 20px;
+    width: 200px;
+    background-color: palegoldenrod;
+    color: rgb(0, 0, 0);
+    font-family: "Instrument Serif", serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border: none;
+    transition: .14s;
+
+    &:hover {
+        background-color: rgba(238, 232, 170, 0.7);
+    }
+}
+
+/* /project gallery part */
+.project-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+    /* background-color: #fff; */
+    /* background: url("assets/WHITE\ BACKGROUND.jpeg"); */
+    /* background-repeat: no-repeat; */
+    backdrop-filter: blur(6px);
+    /* padding-bottom: 100px; */
+    /* top: 0; */
+
+
+}
+
+.project-galery {
+    margin-top: 150px;
+}
+
+.proj-h {
+    font-family: "BBH Sans Hegarty", sans-serif;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+
+}
+
+.card-project {
+    width: 300px;
+    /* top: 0; */
+    padding: 10px 10px;
+    background-color: rgb(223, 222, 222);
+    gap: 10px;
+    height: 350px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: .14s all ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+        /* box-shadow: 1px 8px 10px rgba(210, 202, 202, 0.579); */
+    }
+}
+
+.project-image {
+    width: 100%;
+}
+
+.overlay-card {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: .14s;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.577);
+        opacity: 1;
+        cursor: pointer;
+    }
+
+}
+
+.overlay-card>a {
+    text-decoration: none;
+    color: wheat;
+
+    &:hover {
+        color: blue;
+    }
+}
+
+/* contact section */
+.contact-section {
+    height: 100vh;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* margin-top: 1000px; */
+    align-items: center;
+    background-color: black;
+    color: white;
+    gap: 10px;
+}
+
+.contact-section h1 {
+    margin-top: 100px;
+    color: blue;
+    font-size: 70px;
+    /* position: relative; */
+    /* align-self: ; */
+}
+
+.form1 input {
+
+    width: 350px;
+    border: 1px solid blue;
+    height: 40px;
+
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    /* position: absolute; */
+
+    width: 350px;
+    border: 1px solid blue;
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: blue;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+
+    &:hover {
+        color: blue;
+        background-color: #afb0b4c0;
+    }
+}
+
+
+
+
+
+/*mediaquery */
+@media (max-width:1298px) {
+    .project-galery {
+        flex-direction: column;
+
+    }
+
+    .project-section {
+        height: 100%;
+        padding-bottom: 50PX;
+    }
+}
+
+@media (max-width:647px) {
+
+    .part2,
+    .part1 {
+        flex-direction: column;
+
+    }
+
+}
+
+@media (max-width: 1035px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 80px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .hero h1 {
+        font-size: 60px;
+        /* color: red; */
+    }
+}
+
+@media (min-width: 569px) and (max-width: 769px) {
+    .hero h1 {
+        font-size: 50px;
+        /* color: red; */
+    }
+}
+
+@media (min-width: 500px) and (max-width: 569px) {
+    .hero h1 {
+        font-size: 40px;
+        /* color: red; */
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .hero h1 {
+        font-size: 32px;
+        /* color: red; */
+    }
+
+    .self-indroduction {
+        font-size: 14px;
+    }
+
+    .contact-section h1 {
+        font-size: 50px;
+    }
+
+    .contact-section h6 {
+        /* color: red; */
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 400px) {
+    .hero h1 {
+        font-size: 29px;
+        /* color: red; */
+    }
+
+    .self-indroduction {
+        font-size: 11.5px;
+    }
+
+    .contact-section h1 {
+        font-size: 40px;
+    }
+
+    .contact-section h6 {
+        /* color: red; */
+        font-size: 13px;
+    }
+
+    textarea {
+        /* position: absolute; */
+
+        width: 320px;
+        border: 1px solid blue;
+        height: 100px;
+    }
+
+    .form1 input {
+
+        width: 320px;
+        border: 1px solid blue;
+        height: 40px;
+
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 350px) {
+    .hero h1 {
+        font-size: 24.5px;
+        /* color: red; */
+    }
+
+    .self-indroduction {
+        font-size: 8.4px;
+    }
+
+    .contact-section h1 {
+        font-size: 30px;
+    }
+
+    .contact-section h6 {
+        /* color: red; */
+        font-size: 10px;
+    }
+
+    textarea {
+        /* position: absolute; */
+
+        width: 310px;
+        border: 1px solid blue;
+        height: 100px;
+    }
+
+    .form1 input {
+
+        width: 310px;
+        border: 1px solid blue;
+        height: 40px;
+
+    }
+}
+
+@media (min-width:250px) and (max-width:300px) {
+    .hero h1 {
+        font-size: 23px;
+        /* color: red; */
+    }
+
+    .self-indroduction {
+        font-size: 7.8px;
+    }
+
+    .contact-section h1 {
+        font-size: 30px;
+    }
+
+    .contact-section h6 {
+        /* color: red; */
+        font-size: 10px;
+    }
+
+    .form1 input {
+
+        width: 290px;
+        border: 1px solid blue;
+        height: 40px;
+
+    }
+
+    textarea {
+        /* position: absolute; */
+
+        width: 290px;
+        border: 1px solid blue;
+        height: 100px;
+    }
+}
