@@ -1,5 +1,5 @@
 
-
+// typewritter effect
 const texts = [
   "full stack web developer",
   "MERN stack developer"
@@ -18,16 +18,11 @@ function typeEffect() {
   } else {
     element.textContent = currentText.slice(0, charIndex--);
   }
-
   let speed = isDeleting ? 60 : 100;
-
-  // Pause after full text typed
   if (charIndex === currentText.length + 1) {
     speed = 1200;
     isDeleting = true;
   }
-
-  // Move to next text
   if (charIndex === 0 && isDeleting) {
     isDeleting = false;
     textIndex = (textIndex + 1) % texts.length;
@@ -36,10 +31,9 @@ function typeEffect() {
 
   setTimeout(typeEffect, speed);
 }
-
 typeEffect();
-
-
+  
+// scroll
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
@@ -56,3 +50,4 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".scroll-animate").forEach(el => {
   observer.observe(el);
 });
+// 

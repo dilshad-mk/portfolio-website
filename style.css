@@ -106,6 +106,9 @@ body::-webkit-scrollbar:horizontal {
 /* about section */
 .about{
    height: 100vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
 .image_about{
      background: url("assets/me1.jpg");
@@ -150,14 +153,14 @@ body::-webkit-scrollbar:horizontal {
   }
    
 }
-/* Scroll animation base */
+
 .scroll-animate {
   opacity: 0;
   transform: translateY(60px);
   transition: all 0.8s ease-out;
 }
 
-/* When visible */
+
 .scroll-animate.show {
   opacity: 1;
   transform: translateY(0);
@@ -204,6 +207,21 @@ body::-webkit-scrollbar:horizontal {
     top: 10px;
     right: -10px;
 }
+/* about section  */
+      .image_about{
+        width: 230px;
+    height: 300px;
+    display: none;
+     }
+     .about_me_paragraph p{
+   font-size: 11px;   
+}
+.about_note h1{
+   font-size: 47px;
+}
+.about_note{
+   width: 100%;
+}
     
    }
    @media (min-width:320px) and (max-width:493px) {
@@ -243,6 +261,22 @@ body::-webkit-scrollbar:horizontal {
     top: 10px;
     right: -20px;
 }
+ /* about section  */
+      .image_about{
+        width: 230px;
+    height: 300px;
+    display: none;
+     }
+     .about_me_paragraph p{
+   font-size: 13px;   
+}
+.about_note h1{
+   font-size: 47px;
+}
+.about_note{
+   width: 100%;
+}
+
    }
  @media (min-width: 494px) and (max-width: 596px) {
      .left_home h1{
@@ -270,9 +304,20 @@ body::-webkit-scrollbar:horizontal {
     top: 10px;
     right: -20px;
 }
+/* aboutpart */
+     .image_about{
+        width: 200px;
+    height: 230px;
+     }
+     .about_me_paragraph p{
+   font-size: 10px;   
+}
+.about_note h1{
+   font-size: 42px;
+}
 
 }
- @media (min-width: 597px) and (max-width: 675px) {
+ @media (min-width: 597px) and (max-width: 676px) {
          .left_home h1{
         font-size: 50px;
         line-height: 40px;
@@ -297,6 +342,17 @@ body::-webkit-scrollbar:horizontal {
      .icons:nth-child(4){
     top: 10px;
     right: -20px;
+}
+/* about part */
+     .image_about{
+        width: 230px;
+    height: 300px;
+     }
+     .about_me_paragraph p{
+   font-size: 13px;   
+}
+.about_note h1{
+   font-size: 47px;
 }
 }
      /* Tablet portrait / large phone styles */
@@ -325,8 +381,19 @@ body::-webkit-scrollbar:horizontal {
     top: 10px;
     right: -20px;
 }
+     .image_about{
+        width: 230px;
+    height: 300px;
+     }
+     .about_me_paragraph p{
+   font-size: 13px;   
+}
+.about_note h1{
+   font-size: 47px;
+}
 }
 @media (min-width:769px) and (max-width:835px) {
+   /* home part */
     .left_home h1{
         font-size: 70px;
         line-height: 60px;
@@ -340,6 +407,17 @@ body::-webkit-scrollbar:horizontal {
      .typewriter{
         font-size: 20px;
      }
+     /* about part */
+     .image_about{
+        width: 230px;
+    height: 300px;
+     }
+     .about_me_paragraph p{
+   font-size: 13px;   
+}
+.about_note h1{
+   font-size: 47px;
+}
     
 }
   /* Tablet landscape / small laptop styles */
