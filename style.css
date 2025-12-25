@@ -103,6 +103,68 @@ body::-webkit-scrollbar:horizontal {
     display: none;
 }
 
+/* about section */
+.about{
+   height: 100vh;
+}
+.image_about{
+     background: url("assets/me1.jpg");
+    width: 250px;
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: solid white 1px;
+    border-radius: 10px;
+}
+.graduation_icon{
+   display: flex;
+   padding-top: 10px;
+}
+.about_note{
+   width: 50%;
+}
+.about_note h1{
+   color: #0d6dfc;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    text-decoration: underline;
+}
+.about_me_paragraph{
+   width: 100%;
+}
+.about_me_paragraph p{
+   color: white;
+}
+.cv{
+   background-color: #000000;
+   border: none;
+   width: 150px;
+   height: 35px;
+   color: #0d6dfc;
+  transition: all .14s ease-in-out;
+  &:hover{
+   background-color:white;
+    transition: all .14s ease-in-out;
+  }
+   
+}
+/* Scroll animation base */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+/* When visible */
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
    /* Mobile portrait styles */
 
    @media (min-width:300px) and (max-width:319px) {

@@ -17,10 +17,8 @@
     <!-- NAVBAR -->
 <nav id="navbar-example2" class="navbar navbar-expand-md nav_bar px-3 fixed-top">
   <a class="navbar-brand nav_logo" href="#">Dilshad mk</a>
-
-  <!-- Toggle button (shows below md) -->
   <button
-    class="navbar-toggler"
+    class="navbar-toggler bg-white"
     type="button"
     data-bs-toggle="collapse"
     data-bs-target="#navbarContent"
@@ -30,8 +28,6 @@
   >
     <span class="navbar-toggler-icon"></span>
   </button>
-
-  <!-- Collapsible content -->
   <div class="collapse navbar-collapse" id="navbarContent">
     <ul class="navbar-nav ms-auto nav-pills">
       <li class="nav-item">
@@ -59,7 +55,7 @@
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 
     <!-- home section -->
-  <div id="scrollspyHeading1" class="home overflow-x-hidden container-lg">
+  <div id="scrollspyHeading1" class="home overflow-x-hidden container-lg scroll-animate">
     <div class="left_home">
         <h1 class="text-white">Hi,</h1>
         <h1 class="text-primary">I'm a</h1>
@@ -82,10 +78,34 @@
 ;"></i> React</p></div>
     </div>
   </div>
-  
-  <!-- <h4 id="scrollspyHeading2">Second heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading3">Third heading</h4>
+    <!-- about section -->
+  <div id="scrollspyHeading2" class="container-lg d-flex align-items-center justify-content-evenly about scroll-animate">
+       <div class="left_about flex-column d-flex justify-content-center align-items-center">
+        <div class="image_about">
+        </div>
+       </div>
+       <div class="about_note d-flex flex-column align-items-center gap-4">
+        <div>
+          <H1>About Me</H1>
+         
+        </div>
+        <div class="about_me_paragraph">
+          <p >Hi, I’m Dilshad MK, a Full Stack Web Developer specializing in the MERN stack.I’ve been deeply
+passionate about building modern, user-friendly, and efficient web applications.
+I’m naturally curious about new technologies, and I love exploring tools,
+frameworks, and ideas that help me grow as a developer. Whether it’s
+experimenting with new tech, improving existing skills, or taking on challenging
+projects, I’m always excited to learn and level up.
+I enjoy turning real-world problems into clean, functional digital solutions
+and I believe continuous learning is the key to becoming a better developer every day.</p>
+        </div>
+        <div>
+       <a href="assets/DILSHAD MK-cv.pdf" download>   <button class="cv rounded-pill"><i class="fa fa-download" aria-hidden="true"></i> Download CV</button></a>
+        </div>
+       </div>
+  </div>
+ 
+  <!-- <h4 id="scrollspyHeading3">Third heading</h4>
   <p>...</p>
   <h4 id="scrollspyHeading4">Fourth heading</h4>
   <p>...</p>
