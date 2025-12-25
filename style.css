@@ -112,7 +112,7 @@ body::-webkit-scrollbar:horizontal {
             align-items: center;
         }
         .left_home{
-        margin-top: 50px;
+        /* margin-top: 50px; */
         align-items: center;
         justify-content: center;
      }
@@ -151,7 +151,7 @@ body::-webkit-scrollbar:horizontal {
             align-items: center;
         }
         .left_home{
-        margin-top: 50px;
+        /* margin-top: 50px; */
         align-items: center;
         justify-content: center;
      }
