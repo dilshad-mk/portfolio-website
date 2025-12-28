@@ -249,6 +249,13 @@ display: grid;
    padding: 30px 0px;
    gap: 5px;
    cursor: pointer;
+   transition: .14s ease all;
+   &:hover .tech_item i{
+      color:#013d97ed;
+   }
+   &:hover{
+      transform: translateY(-5px);
+   }
    
 }
 .project_card h3{
@@ -259,11 +266,17 @@ display: grid;
    color: #013d97;
    font-style: 10px;
    font-weight:bolder;
+   padding-left: 10px;
 }
 .about_project p{
    font-size: 14px;
     max-width: 90%; 
     color: white;
+    padding-left: 10px;
+}
+.about_project{
+   height: 300%;
+   /* background-color: red; */
 }
 .about_project li{
    color: white;
@@ -273,11 +286,124 @@ display: grid;
    /* justify-content: space-betwee; */
    gap: 30px;
 }
-.about_project{
+.buttons{
    display: flex;
+   gap: 50px;
+}
+.buttons button{
+   color: #013d97;
+   background-color: black;
+   border: none;
+   width: 130px;
+   height: 40px;
+   border-radius: 10px;
+   font-weight: bold;
+   transition: all .14s ease-in-out;
+   &:hover{
+      background-color: #fff;
+
+   }
+
+}
+/* contact section  */
+/* CONTACT SECTION */
+.contact_wrapper {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+
+.contact_left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact_card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.2s ease;
+}
+
+.contact_card:hover {
+  background-color: #000;
+}
+
+.contact_card i {
+  font-size: 32px;
+  color: white;
+}
+
+.contact_card h5 {
+  color: #0d6dfc;
+  margin: 0;
+}
+
+.contact_card p {
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+}
+
+/* FORM */
+.contact_form {
+  max-width: 400px;
+  width: 100%;
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #000;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 6px;
+}
+
+.contact_form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact_form button {
+  background-color: black;
+  color: #0d6dfc;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.contact_form button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact_wrapper {
     flex-direction: column;
-    align-items: center; 
-    /* text-align: center; */
+    align-items: center;
+  }
 }
 
    /* Mobile portrait styles */
