@@ -32,7 +32,7 @@ function typeEffect() {
   setTimeout(typeEffect, speed);
 }
 typeEffect();
-  
+
 // scroll
 const observer = new IntersectionObserver(
   (entries) => {
@@ -50,4 +50,3 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".scroll-animate").forEach(el => {
   observer.observe(el);
 });
-// 
