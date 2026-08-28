@@ -55,8 +55,15 @@ function About() {
             <p className='bg-[#E03F4F] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Next.js</p>
             <p className='bg-[#346739] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Motion</p>
             <p className='bg-[#35858E] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Context</p>
-            <p className='bg-[#D552A3] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Reducx</p>
+            <p className='bg-[#D552A3] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Redux</p>
             <p className='bg-[#F9D0CD] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Zustand</p>
+            <p className='bg-[#8a7dff] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Express.js</p>
+            <p className='bg-[#2d7d46] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>MongoDB</p>
+            <p className='bg-[#3b82f6] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Node.js</p>
+            <p className='bg-[#f97316] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Git</p>
+            <p className='bg-[#38bdf8] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Tailwind</p>
+            <p className='bg-[#7c3aed] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Bootstrap</p>
+            <p className='bg-[#f59e0b] text-white text-sm font-semibold font-mono px-3 py-2 rounded-md'>Axios</p>
            </motion.div>
              )}
 </AnimatePresence>
